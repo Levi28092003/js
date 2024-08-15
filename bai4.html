@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4</title>
+</head>
+<body>
+    <script>
+        // Bài 4: Nhập vào một số bất kỳ
+        // in ra màn hình các số nguyên tố nhỏ hơn số vừa nhập
+
+        var n = prompt("Moi nhap vao mot so n");
+        for (let i = 2; i < n; i++) {
+            let isPrime = true;
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                document.write("<br>",i);
+            }
+        }
+    </script>
+</body>
+</html>

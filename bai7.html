@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai7</title>
+</head>
+<body>
+    <script>
+        // Bài 7: Nhập vào một ký tự bất kỳ. Kiểm tra đó có phải kiểu số hay không
+        // nếu đúng đưa về thông báo true
+        // Nếu sai yêu cầu nhập lại
+        var isNumber = false;
+        while (!isNumber){
+            let input = prompt("Vui lòng nhập vào một số:");
+
+        // kiểm tra nếu input là số
+        if(!isNaN(input) && input.trim() !== ''){
+            isNumber = true;
+            document.write("<br/>True");
+        }else{
+            console.log("Giá trị bạn nhập không phải là số. Vui lòng nhập lại");
+        }
+        }
+    </script>
+</body>
+</html>
